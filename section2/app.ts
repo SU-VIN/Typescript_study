@@ -7,6 +7,23 @@
 const person = {
   name: "subin",
   age: 24,
+  hobbies: ["Sports", "Cooking"],
 };
+// let favoriteActivities: any[]; //데이터 타입 명시적 설정
+// //타입이 2개이상인 배열의 타입은 any
+// favoriteActivities = ["Sports", 1];
 
+let favoriteActivities: String[]; //데이터 타입 명시적 설정
+
+favoriteActivities = ["Sports"];
 console.log(person.name);
+
+for (const hobby of person.hobbies) {
+  console.log(hobby.toLowerCase());
+}
+
+//튜플
+let join: [string, string, number];
+
+join = ["임수빈", "여자", 23];
+// join = ["임수빈",23,"여자"]; <-에러
