@@ -4,7 +4,8 @@
     "module": "ESNext",
     "outDir": "dist",
     "strict": true,
-    "moduleDetection": "force"
+    "moduleDetection": "force",
+    "strictNullChecks": true // null타입이 아닌변수에 null을 넣는걸 허용
   },
   "ts-node": {
     "esm": true
