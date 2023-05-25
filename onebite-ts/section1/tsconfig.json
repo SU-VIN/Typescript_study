@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", //컴파일된 js의 버전
+    "module": "ESNext", //모듈 시스템을 정해줌 ex) export dafalut import
+    "outDir": "dist", //ts로 컴파일해 생성된 js파일이 존재할곳
+    "strict": true, //엄격한 타입 검사
+    "moduleDetection": "force" //컴파일러가 모듈시스템을 사용하는 키워드로 자동으로 추가해주어 전역모듈이 아닌 개별모듈로 사용할 수 있음
+  },
+  "ts-node": {
+    "esm": true //ts가 es모듈 시스템을 이해하게 해줌
+  },
+  "include": ["src"] //src 디렉토리 자식들을 모두 컴파일
+}
