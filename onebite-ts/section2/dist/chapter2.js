@@ -13,5 +13,12 @@ let doubleArr = [
 ];
 //튜플 ts only 길이와 타입이 고정
 let tup1 = [1, 2];
-let tup2 = [1, "2", true];
+let tup2 = [1, "2", true]; //하지만 컴파일하면 배열형태임 push pop조심
+//그럼왜씀?
+const users = [
+    //index의 순서가 중요할때 씀
+    ["임수빈", 1],
+    ["홍길동", 2],
+    ["이박이", 3],
+];
 export {};
