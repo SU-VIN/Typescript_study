@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useState } from "react";
 
 interface Props {
   onClickAdd: (text: string) => void;
@@ -20,7 +20,7 @@ export default function Editor(props: Props) {
   return (
     <div>
       <input value={text} onChange={onChangeInput} />
-      <button onClick={onClickButton}>추가</button>{" "}
+      <button onClick={onClickButton}>+</button>
     </div>
   );
 }
